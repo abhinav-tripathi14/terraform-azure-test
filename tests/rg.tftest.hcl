@@ -11,9 +11,9 @@ run "rg_name_validation" {
     source = "./tests/setup"
   }
 
-  # variables {
-  #   endpoint = run.setup_tests.rg-name
-  # }
+ variables {
+     rg_name = "example-rg-abhinav"
+   }
 
  assert {
   condition = azurerm_resource_group.example.name == var.rg_name
