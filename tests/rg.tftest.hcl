@@ -5,7 +5,7 @@ run "setup_tests" {
 }
 
 run "rg_name_validation" {
-  command = plan
+  command = apply
 
   module {
     source = "./tests/setup"
