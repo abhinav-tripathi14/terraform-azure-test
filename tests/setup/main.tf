@@ -6,11 +6,11 @@ terraform {
     }
   }
 }
-
-resource "random_pet" "rg_name_prefix" {
-  length = 4
+provider "azurerm" {
+  features {}
+    subscription_id =  "3a3e4fbf-6797-4108-bb58-4d3a772bec96"
 }
-
-output "rg_name_prefix" {
-  value = random_pet.rg_name_prefix.id
+resource "azurerm_resource_group" "example" {
+  name     = "example-rg-abhinav"
+  location = "West Europe"
 }
