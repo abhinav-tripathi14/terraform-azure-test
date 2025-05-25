@@ -11,11 +11,11 @@ run "rg_name_validation" {
     source = "./tests/setup"
   }
 
- variables {
+  variables {
      rg_name = "example-rg-abhinav"
    }
 
- assert {
+  assert {
   condition = azurerm_resource_group.example.name == var.rg_name
   error_message = "Invalid resource group name"
   }
