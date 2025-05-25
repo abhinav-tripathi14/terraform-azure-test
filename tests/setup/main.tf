@@ -14,4 +14,3 @@ resource "random_pet" "rg_name_prefix" {
 output "rg_name_prefix" {
   value = random_pet.rg_name_prefix.id
 }
-
