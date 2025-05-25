@@ -12,7 +12,7 @@ run "rg_name_validation" {
   }
 
   variables {
-     rg_name = "example-rg-abhinav1"
+     rg_name = "example-rg-abhinav"
    }
 
   assert {
